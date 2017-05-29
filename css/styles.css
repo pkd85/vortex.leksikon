@@ -1,0 +1,148 @@
+html {
+}
+
+body {
+	margin: 0px;
+	background-image: url(../images/background_opaque.png);
+	background-size: cover;
+}
+
+header .container {
+	background-color: #f2f20d;
+	position: relative;
+	border-radius: 10px;
+}
+
+#logo {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-image: url(../images/logo_lg.png);
+	background-size: contain;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+h1 {
+	font-family: "Bree Serif", Arial, sans-serif;
+	font-style: italic;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	color: #4d4d4d;
+}
+
+#fb-page {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+.fa-facebook {
+	position: relative;
+	background: #3B5998;
+	color: white;
+	text-align: right;
+	text-decoration: none;
+	width: 25px;
+	height: 25px;
+	margin: 0px 0px 0px 0px;
+	border-radius: 5px;
+}
+
+.fa-facebook:before {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	font-size: 20px;
+	margin-right: 3px;
+}
+
+.fa-facebook:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.affirmation button {
+	padding: 10px;
+	margin-top: 25px;
+}
+
+#aff-text {
+	font-family: 'Indie Flower', Arial, sans-serif;
+	font-size: 2.5em;
+	background-color: white;
+	color: green;
+	width: 100%;
+	height: auto;
+	min-height: 150px;
+	margin-top: 50px;
+}
+
+/************ Large **************/
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 3.5em;
+		height: 160px;
+		padding-top: 50px;
+	}
+
+	#logo {
+		width: 137px;
+		height: 160px;
+	}
+}
+
+/************ Medium **************/
+@media (min-width: 992px) and (max-width: 1199px) {
+	h1 {
+		font-size: 2.5em;
+		height: 120px;
+		padding-top: 37px;
+	}
+
+	#logo {
+		width: 103px;
+		height: 120px;
+	}
+
+}
+
+
+/************ Small **************/
+@media (min-width: 768px) and (max-width: 991px) {
+	h1 {
+		font-size: 2em;
+		height: 80px;
+		padding-top: 25px;
+	}
+	#logo {
+		width: 68px;
+		height: 80px;
+	}
+}
+
+
+/************ Extra-small **************/
+@media (max-width: 767px) {
+	h1 {
+		font-size: 1.5em;
+		height: 48px;
+		padding-top: 15px;
+	}
+	
+	#logo {
+		width: 41px;
+		height: 48px;
+	}
+	.fa-facebook {
+		width: 20px;
+		height: 20px;
+		border-radius: 4px;
+	}
+	.fa-facebook:before {
+		font-size: 16px;
+		margin-right: 2px;
+	}
+	
+}
+
