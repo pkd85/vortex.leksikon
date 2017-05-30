@@ -1,56 +1,56 @@
 var loveButton = document.getElementsByTagName('button')[0];
 loveButton.affirmations = [
 	"Ja sam voljena.",
-	"Okruzena sam ljubavlju.",
-	"Zasluzujem ljubav i dobijam je u izobilju.",
+	"Okružena sam ljubavlju.",
+	"Zaslužujem ljubav i dobijam je u izobilju.",
 	"Kuda god krenem, nailazim na ljubav.",
-	"Moj partner i ja savrseno odgovaramo jedno drugom, a ljubav izmedju nas je bozanska.",
-	"Dajem ljubav, a ona se meni vraca uvijek uvecana.",
-	"U ljubavi sam sa prekrasnom osobom koja je brizna, predana, odana, pouzdana i ima razumijevanje.",
+	"Moj partner i ja savršeno odgovaramo jedno drugom, a ljubav između nas je božanska.",
+	"Dajem ljubav, a ona se meni vraća uvijek uvećana.",
+	"U ljubavi sam sa prekrasnom osobom koja je brižna, predana, odana, pouzdana i ima razumijevanje.",
 ]
 
 var healthButton = document.getElementsByTagName('button')[1];
 healthButton.affirmations = [
-	"Svaka celija mog tijela je napunjena energijom i zdravljem.",
-	"Ljubav prema sebi iscjeljuje moj zivot.",
-	"Njegujem svoj um, tijelo i dusu.",
-	"Moje tijelo je snazno i puno vitalnosti.",
+	"Svaka ćelija mog tijela je napunjena energijom i zdravljem.",
+	"Ljubav prema sebi iscjeljuje moj život.",
+	"Njegujem svoj um, tijelo i dušu.",
+	"Moje tijelo je snažno i puno vitalnosti.",
 	"Moje misli su u harmoniji.",
-	"Ja sam aktivna, puna energije i moj zivot je u mojim rukama.",
-	"Moje tijelo se lijeci brzo i lako.",
+	"Ja sam aktivna, puna energije i moj život je u mojim rukama.",
+	"Moje tijelo se liječi brzo i lako.",
 	"Ja u potpunosti prihvatam svoje tijelo.",
-	"Ja se osjecam dobro iz dana u dan.",
+	"Ja se osjećam dobro iz dana u dan.",
 ]
 
 var jobButton = document.getElementsByTagName('button')[2];
 jobButton.affirmations = [
-	"Sve svoje ciljeve ostvarujem s lakocom.",
-	"Sve izazove pretvaram u dobre poslovne sanse.",
+	"Sve svoje ciljeve ostvarujem s lakoćom.",
+	"Sve izazove pretvaram u dobre poslovne šanse.",
 	"Imam prava uvjerenja koja me vode ka uspjehu.",
-	"Stalno privlacim prave klijente u svoj biznis.",
+	"Stalno privlačim prave klijente u svoj biznis.",
 	"Svakodnevno koristim nove ideje da unaprijedim svoj posao.",
 	"Volim svoj posao.",
-	"Zavrsavam sve svoje poslove na vrijeme.",
+	"Završavam sve svoje poslove na vrijeme.",
 	"Radim posao koji volim i to me ispunjava.",
 ]
 
 var moneyButton = document.getElementsByTagName('button')[3];
 moneyButton.affirmations = [
 	"Sada sam spremna da prihvatim neizmjerno materijalno i duhovno bogatstvo.",
-	"Odlucno otpustam grc kojim sam sebe drzala u siromastvu i neznanju i otvaram svoje srce da prihvatim svo izobilje koje mi je na raspolaganju.",
-	"Spremna sam da dajem jer i sto vise dajem, to vise imam novca i svega sto mi je potrebno.",
+	"Odlučno otpuštam grč kojim sam sebe držala u siromaštvu i neznanju i otvaram svoje srce da prihvatim svo izobilje koje mi je na raspolaganju.",
+	"Spremna sam da dajem jer i što više dajem, to više imam novca i svega što mi je potrebno.",
 	"Meni dolaze raznovrsna bogatstva bez ikakvog napora.",
-	"Moji prihodi se stalno uvecavaju.",
-	"Ja sam srecna i bogata. Posezem za bozanskim izobiljem koje je svugdje oko mene.",
+	"Moji prihodi se stalno uvećavaju.",
+	"Ja sam srećna i bogata. Posežem za božanskim izobiljem koje je svugdje oko mene.",
 ]
 
 var relationsButton = document.getElementsByTagName('button')[4];
 relationsButton.affirmations = [
 	"Svi moji odnosi su dugi, trajni i puni ljubavi.",
-	"Susrecem ljubav u svim svojim odnosima.",
-	"U svim mojim odnosima (s mojim roditeljima, bracom i sestrama, mojim zivotnim partnerom, mojim prijateljima) ja samo dajem ljubav i trazim ljubav.",
-	"Zahvalna sam na svim ljudima u svom zivotu koji me vole takvu kakva sam.",
-	"Ljubav koju iskazujem i saljem drugima vraca mi se visestruko.",
+	"Susrećem ljubav u svim svojim odnosima.",
+	"U svim mojim odnosima (s mojim roditeljima, braćom i sestrama, mojim životnim partnerom, mojim prijateljima) ja samo dajem ljubav i tražim ljubav.",
+	"Zahvalna sam na svim ljudima u svom životu koji me vole takvu kakva sam.",
+	"Ljubav koju iskazujem i šaljem drugima vraća mi se višestruko.",
 	"Kada provodim vrijeme s drugim ljudima, moje srce ispunjava ljubav.",
 ]
 
@@ -63,7 +63,7 @@ function displayAffirmation(e, target) {
 		affText.textContent = e.target.affirmations[affNum];
 	}
 	else {
-		affText.innerHTML = "<textarea name='wish' placeholder='Ovdje upisite svoju zelju'></textarea>";
+		affText.innerHTML = "<textarea name='wish' placeholder='Ovdje upišite svoju želju'></textarea>";
 		affText.innerHTML += "<button id='submit'>Pošalji</button>";
 		affText.innerHTML += "<div id='wish-submitted'></div>"
 
