@@ -64,7 +64,19 @@ function displayAffirmation(e, target) {
 	}
 	else {
 		affText.innerHTML = "<textarea name='wish' placeholder='Ovdje upisite svoju zelju'></textarea>";
-		affText.innerHTML += "<input type=submit value='Posalji'></input>";
+		affText.innerHTML += "<button id='submit'>Posalji</button>";
+		affText.innerHTML += "<div id='wish-submitted'></div>"
+
+		function displaySubmissionMessage () {
+			var wishSubmitted = document.getElementById('wish-submitted');
+			wishSubmitted.textContent = 'Vasa zelja je poslana!'
+		}
+
+		var submitWishButton = document.getElementById('submit');
+		submitWishButton.addEventListener('click', function() {
+			displaySubmissionMessage()
+		}, false);
+
 	}
 }
 
@@ -72,3 +84,4 @@ var btnListen = document.getElementById('btnListener');
 btnListen.addEventListener('click', function(e) {
 	displayAffirmation(e, e.target);
 }, false);
+

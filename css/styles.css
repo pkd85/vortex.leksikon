@@ -95,7 +95,7 @@ textarea {
 	resize: none;
 }
 
-input {
+#submit {
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -107,6 +107,12 @@ input {
 	color: black;
 	background: #f2f20d;
 	background: linear-gradient(#f2f20d, #00b300);
+}
+
+#wish-submitted {
+	font-family: "Bree Serif", Arial, sans-serif;
+	color: black;
+	clear: left;
 }
 
 /************ Large **************/
@@ -122,7 +128,7 @@ input {
 		height: 160px;
 	}
 
-	input {
+	#submit {
 		width: 10%;
 	}
 
@@ -141,7 +147,7 @@ input {
 		height: 120px;
 	}
 
-	input {
+	#submit {
 		width: 10%;
 	}
 
@@ -168,7 +174,7 @@ input {
 		font-size: 0.5em;
 	}
 
-	input {
+	#submit {
 		position: relative;
 		height: 45px;
 		border-radius: 50px;
@@ -207,7 +213,7 @@ input {
 		font-size: 0.5em;
 	}
 
-	input {
+	#submit {
 		position: relative;
 		height: 45px;
 		border-radius: 50px;
