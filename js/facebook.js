@@ -13,15 +13,6 @@ window.fbAsyncInit = function() {
     xfbml            : true,
     version          : 'v2.9'
   });
-FB.ui({
-  method: 'share_open_graph',
-  action_type: 'og.likes',
-  action_properties: JSON.stringify({
-    object:'https://developers.facebook.com/docs/',
-  })
-}, function(response){
-  // Debug response (optional)
-  console.log(response);
-});
+
   FB.AppEvents.logPageView();
 };
