@@ -66,6 +66,12 @@ h1 {
 	color: #4d4d4d;
 }
 
+#fb-share-button {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
 #fb-page {
 	position: absolute;
 	right: 0px;
@@ -202,6 +208,10 @@ textarea {
 		width: 68px;
 		height: 80px;
 	}
+	#fb-share-button {
+		top: 10px;
+		right: 10px;
+	}
 
 	#aff-text {
 		margin-top: 20px;
@@ -241,6 +251,11 @@ textarea {
 		width: 41px;
 		height: 48px;
 	}
+	#fb-share-button {
+		top: 0px;
+		right: 0px;
+	}
+
 	.fa-facebook {
 		width: 20px;
 		height: 20px;

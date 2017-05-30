@@ -64,12 +64,12 @@ function displayAffirmation(e, target) {
 	}
 	else {
 		affText.innerHTML = "<textarea name='wish' placeholder='Ovdje upisite svoju zelju'></textarea>";
-		affText.innerHTML += "<button id='submit'>Posalji</button>";
+		affText.innerHTML += "<button id='submit'>Pošalji</button>";
 		affText.innerHTML += "<div id='wish-submitted'></div>"
 
 		function displaySubmissionMessage () {
 			var wishSubmitted = document.getElementById('wish-submitted');
-			wishSubmitted.textContent = 'Vasa zelja je poslana!'
+			wishSubmitted.textContent = 'Vaša želja je poslana :)'
 		}
 
 		var submitWishButton = document.getElementById('submit');
@@ -84,11 +84,3 @@ var btnListen = document.getElementById('btnListener');
 btnListen.addEventListener('click', function(e) {
 	displayAffirmation(e, e.target);
 }, false);
-
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
