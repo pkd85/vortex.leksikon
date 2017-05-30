@@ -63,8 +63,8 @@ function displayAffirmation(e, target) {
 		affText.textContent = e.target.affirmations[affNum];
 	}
 	else {
-		affText.innerHTML = "<textarea name='wish' rows='1' placeholder='Ovdje upisite svoju zelju'></textarea>";
-		affText.innerHTML += "<input type=submit value=Posalji></input>";
+		affText.innerHTML = "<textarea name='wish' placeholder='Ovdje upisite svoju zelju'></textarea>";
+		affText.innerHTML += "<input type=submit value='Posalji'></input>";
 	}
 }
 

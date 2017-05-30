@@ -85,8 +85,12 @@ h1 {
 }
 
 textarea {
-	width: 100%;
-	border-radius: 50px;
+	width: 90%;
+	height: 90px;
+	float: left;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	font-size: 0.8em;
 	text-align: center;
 	resize: none;
 }
@@ -95,9 +99,11 @@ input {
 	position: absolute;
 	top: 0px;
 	right: 0px;
+	height: 90px;
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
 	font-family: "Bree Serif", Arial, sans-serif;
+	font-size: 0.8em;
 	color: black;
 	background: #f2f20d;
 	background: linear-gradient(#f2f20d, #00b300);
@@ -115,6 +121,11 @@ input {
 		width: 137px;
 		height: 160px;
 	}
+
+	input {
+		width: 10%;
+	}
+
 }
 
 /************ Medium **************/
@@ -130,6 +141,10 @@ input {
 		height: 120px;
 	}
 
+	input {
+		width: 10%;
+	}
+
 }
 
 
@@ -143,6 +158,21 @@ input {
 	#logo {
 		width: 68px;
 		height: 80px;
+	}
+
+	textarea {
+		width: 100%;
+		height: 56px;
+		float: none;
+		border-radius: 50px;
+		font-size: 0.5em;
+	}
+
+	input {
+		position: relative;
+		height: 45px;
+		border-radius: 50px;
+		font-size: 0.5em;
 	}
 }
 
@@ -171,17 +201,16 @@ input {
 	
 	textarea {
 		width: 100%;
+		height: 56px;
+		float: none;
 		border-radius: 50px;
-		text-align: center;
-		resize: none;
+		font-size: 0.5em;
 	}
 
 	input {
 		position: relative;
+		height: 45px;
 		border-radius: 50px;
-		font-family: "Bree Serif", Arial, sans-serif;
-		color: black;
+		font-size: 0.5em;
 	}
-
 }
-
