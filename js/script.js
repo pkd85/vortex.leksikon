@@ -7,6 +7,7 @@ loveButton.affirmations = [
 	"Moj partner i ja savršeno odgovaramo jedno drugom, a ljubav između nas je božanska.",
 	"Dajem ljubav, a ona se meni vraća uvijek uvećana.",
 	"U ljubavi sam sa prekrasnom osobom koja je brižna, predana, odana, pouzdana i ima razumijevanje.",
+	"Ja sam potpuno vrijedna ljubavi.",
 ]
 
 var healthButton = document.getElementsByTagName('button')[1];
@@ -72,9 +73,18 @@ function displayAffirmation(e, target) {
 			wishSubmitted.textContent = 'Vaša želja je poslana :)'
 		}
 
+		function displayWriteWishMessage () {
+			var wishSubmitted = document.getElementById('wish-submitted');
+			wishSubmitted.textContent = 'Upišite svoju želju prije nego je pošaljete'
+		}
+
+		var wishText = document.getElementsByTagName('textarea')[0];
 		var submitWishButton = document.getElementById('submit');
 		submitWishButton.addEventListener('click', function() {
-			displaySubmissionMessage()
+			if (wishText.value.length != '') {
+				displaySubmissionMessage()
+			}
+			else displayWriteWishMessage();
 		}, false);
 
 	}
