@@ -51,12 +51,13 @@ loveButton.affirmations = [
 "Zaslužujem ljubav koju dobijam.",
 "Zaslužujem ljubav i sve dobro što život ima da mi ponudi.",
 "U srećnoj sam vezi sa osobom koja me istinski voli",
-"Moj partner je ljubav moga života. Obožavamo jedno drugo.",
+"Moj partner je ljubav mog života. Obožavamo jedno drugo.",
 "Trajne veze ispunjene ljubavlju uljepšavaju moj život.",
 "Privlačim ljubav u svoj život i prihvatam je raširenih ruku.",
 "Moja ljubav je bezuslovna.",
 "Vrijedna sam ljubavi i zaslužujem da budem bezuslovno voljena.",
 "Otvorena sam za ljubav u svim oblicima.",
+"Volim sebe i dopuštam drugima da me vole.",
 ]
 
 var healthButton = document.getElementsByTagName('button')[1];
@@ -305,6 +306,7 @@ relationsButton.affirmations = [
 'Velikodušno dajem svoju ljubav drugima i prihvatam ljubav sa zahvalnošću.',
 'Svi moji odnosi su harmonični.',
 'Svakoga dana moj krug prijatelja se uvećava.',
+'Volim i prihvatam sebe. Ja sam magnet za divna prijateljstva.',
 ]
 
 var wishButton = document.getElementsByTagName('button')[5];
@@ -337,7 +339,10 @@ function displayAffirmation(e, target) {
 			if (wishText.value != '') {
 				displaySubmissionMessage()
 			}
-			else displayWriteWishMessage();
+			else {
+				displayWriteWishMessage();
+				wishText.focus();
+			}
 		}, false);
 
 	}
